@@ -64,7 +64,7 @@ $(document).on('turbolinks:load', function(){
     //Inject the card token in a hidden field.
     theForm.append( $('<input type="hidden" name="user[stripe_card_token]">').val(token) );
     
-    //Submit form to our Rails app.
+    //Submit the form to our Rails app.
     theForm.get(0).submit();
   }
 });
